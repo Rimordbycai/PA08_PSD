@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity ServerGPT is
+entity ATMEXAMPLE is
     Port (
         clk       : in  STD_LOGIC;
         rst       : in  STD_LOGIC;
@@ -11,9 +11,9 @@ entity ServerGPT is
         ack_out   : out STD_LOGIC;
         balance   : out INTEGER
     );
-end ServerGPT;
+end ATMEXAMPLE;
 
-architecture Behavioral of ServerGPT is
+architecture Behavioral of ATMEXAMPLE is
     type state_type is (IDLE, PROCESS, RESPOND);
     signal current_state, next_state : state_type;
     signal account_db : array (0 to 9) of INTEGER := (1000, 2000, 1500, 3000, 500, 700, 900, 1200, 2500, 1800);
