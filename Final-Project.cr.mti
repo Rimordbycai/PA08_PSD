@@ -1,0 +1,44 @@
+C:/Kuliah/PSD/Final-Project/Decoder3to1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Decoder3to1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decoder3to7
+-- Compiling architecture Behavioral of Decoder3to7
+
+} {} {}} C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ATMEXAMPLE
+-- Compiling architecture Behavioral of ATMEXAMPLE
+** Error: C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd(17): near "PROCESS": (vcom-1576) expecting CHARACTER or IDENTIFIER.
+** Error: C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd(18): (vcom-1136) Unknown identifier "state_type".
+** Error: C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd(19): near "array": (vcom-1576) expecting STRING or IDENTIFIER or << or '('.
+** Note: C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd(25): VHDL Compiler exiting
+
+} {9.0 12.0} {}} C:/Kuliah/PSD/Final-Project/SPI_Master.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/SPI_Master.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SPI_Master
+** Error: C:/Kuliah/PSD/Final-Project/SPI_Master.vhd(9): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+
+} {8.0 9.0} {}} C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ServerGPT
+-- Compiling architecture Behavioral of ServerGPT
+** Error: C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd(17): near "PROCESS": (vcom-1576) expecting CHARACTER or IDENTIFIER.
+** Error: C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd(18): (vcom-1136) Unknown identifier "state_type".
+** Error: C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd(19): near "array": (vcom-1576) expecting STRING or IDENTIFIER or << or '('.
+** Note: C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd(25): VHDL Compiler exiting
+
+} {9.0 12.0} {}}
