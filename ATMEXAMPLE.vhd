@@ -2,22 +2,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity ATMEXAMPLE is
+entity ATM is
     Port (
-        clk       : in  STD_LOGIC;
-        rst       : in  STD_LOGIC;
-        spi_in    : in  STD_LOGIC_VECTOR(7 downto 0);
-        spi_ready : in  STD_LOGIC;
-        ack_out   : out STD_LOGIC;
-        balance   : out INTEGER
+        clk      : in  STD_LOGIC;
+        rst      : in  STD_LOGIC;
+        id       : in  INTEGER range 0 to 99;
+        pin      : in  INTEGER range 0 to 9999;
+        amount   : in  INTEGER;
+        spi_out  : out STD_LOGIC_VECTOR(7 downto 0);
+        spi_done : out STD_LOGIC
     );
-end ATMEXAMPLE;
+end ATM;
 
-architecture Behavioral of ATMEXAMPLE is
-    type state_type is (IDLE, PROCESS, RESPOND);
+architecture Behavioral of ATM is
+    type state_type is (IDLE, LOGIN, TRANSACT, LOGOUT);
     signal current_state, next_state : state_type;
-    signal account_db : array (0 to 9) of INTEGER := (1000, 2000, 1500, 3000, 500, 700, 900, 1200, 2500, 1800);
-    signal balance_internal : INTEGER := 0;
+    signal opcode : STD_LOGIC_VECTOR(7 downto 0);
 begin
     process (clk, rst)
     begin
@@ -28,53 +28,42 @@ begin
         end if;
     end process;
 
-    process (current_state, spi_in, spi_ready)
+    process (current_state, id, pin, amount)
     begin
         case current_state is
             when IDLE =>
-                ack_out <= '0';
-                if spi_ready = '1' then
-                    next_state <= PROCESS;
+                opcode <= "00000000"; -- No operation
+                spi_done <= '0';
+                if id /= 0 and pin /= 0 then
+                    next_state <= LOGIN;
                 else
                     next_state <= IDLE;
                 end if;
 
-            when PROCESS =>
-                case spi_in is
-                    when "00000001" => -- LOGIN
-                        ack_out <= '1'; -- Assume login always succeeds
-                        next_state <= RESPOND;
+            when LOGIN =>
+                opcode <= "00000001"; -- LOGIN opcode
+                spi_done <= '1';
+                next_state <= TRANSACT;
 
-                    when "00000010" => -- DEPOSIT
-                        account_db(0) <= account_db(0) + 100; -- Example deposit amount
-                        balance_internal <= account_db(0);
-                        ack_out <= '1';
-                        next_state <= RESPOND;
+            when TRANSACT =>
+                if amount > 0 then
+                    opcode <= "00000010"; -- DEPOSIT opcode
+                else
+                    opcode <= "00000011"; -- WITHDRAW opcode
+                end if;
+                spi_done <= '1';
+                next_state <= LOGOUT;
 
-                    when "00000011" => -- WITHDRAW
-                        if account_db(0) >= 100 then -- Example withdrawal amount
-                            account_db(0) <= account_db(0) - 100;
-                            balance_internal <= account_db(0);
-                            ack_out <= '1';
-                        else
-                            ack_out <= '0'; -- Insufficient funds
-                        end if;
-                        next_state <= RESPOND;
-
-                    when "00000100" => -- LOGOUT
-                        ack_out <= '1';
-                        next_state <= IDLE;
-
-                    when others =>
-                        next_state <= IDLE;
-                end case;
-
-            when RESPOND =>
-                balance <= balance_internal;
+            when LOGOUT =>
+                opcode <= "00000100"; -- LOGOUT opcode
+                spi_done <= '1';
                 next_state <= IDLE;
 
             when others =>
                 next_state <= IDLE;
         end case;
     end process;
+
+    spi_out <= opcode;
+
 end Behavioral;

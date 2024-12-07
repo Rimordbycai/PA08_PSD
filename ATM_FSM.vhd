@@ -11,6 +11,7 @@ entity ATM_FSM is
     port (
         CLK : IN STD_LOGIC;
         FSM_EN : IN STD_LOGIC;
+        RST : IN STD_LOGIC;
         
         ATM_INSIDE : IN STD_LOGIC;
         ACCOUNT_ID : IN STD_LOGIC_VECTOR(4 downto 0);
@@ -19,9 +20,10 @@ entity ATM_FSM is
         NOMINAL : IN INTEGER RANGE 0 to 255;
         MESSAGE_IN : IN STD_LOGIC_VECTOR(15 downto 0);
 
-        OPTION_WS : STD_LOGIC -- 0 untuk withdraw, 1 untuk store
+        OPTION_WS : IN STD_LOGIC; -- 0 untuk withdraw, 1 untuk store
         
         MESSAGE_OUT : OUT STD_LOGIC_VECTOR(15 downto 0);
+        MESSAGE_SEND : OUT STD_LOGIC
     );
 end entity ATM_FSM;
 
@@ -33,6 +35,7 @@ architecture rtl of ATM_FSM is
 begin
     TRANSITION : PROCESS(CLK)
     begin
+
         if rising_edge(CLK) and FSM_EN = '1' then
             case STATE is
 
@@ -43,11 +46,11 @@ begin
 
                 when LOGIN => 
                     MESSAGE_OUT <= "11" & ATM_ID & ACCOUNT_ID & ACCOUNT_PIN & "00";
-                    -- SPI_ACTIVE <= '1';
+                    MESSAGE_SEND <= '1';
                     STATE <= CHOOSE_OPTION;
                 
                 when CHOOSE_OPTION =>
-                    if MESSAGE_IN(0) = '0' then
+                    if MESSAGE_IN(15) = '0' then
                         STATE <= IDLE;
                     else
                         if OPTION_WS = '0' then
@@ -59,12 +62,12 @@ begin
 
                 when WITHDRAW =>
                     MESSAGE_OUT <= "01" & ATM_ID & STD_LOGIC_VECTOR(TO_UNSIGNED(NOMINAL, 8)) & "000";
-                    -- SPI_ACTIVE <= '1';
+                    MESSAGE_SEND <= '1';
                     STATE <= CHECK;
 
                 when STORE =>
                     MESSAGE_OUT <= "10" & ATM_ID & STD_LOGIC_VECTOR(TO_UNSIGNED(NOMINAL, 8)) & "000";
-                    -- SPI_ACTIVE <= '1';
+                    MESSAGE_SEND <= '1';
                     STATE <= CHECK;
 
                 when CHECK =>
