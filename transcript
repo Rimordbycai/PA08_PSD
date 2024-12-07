@@ -658,3 +658,131 @@ run
 # 
 run
 force -freeze sim:/server_fsm/FSM_EN 1 0
+force -freeze sim:/server_fsm/MESSAGE_IN 1100100010000100 0
+run
+run
+run
+run
+run
+force -freeze sim:/server_fsm/MESSAGE_IN 1100100010010100 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/server_fsm/MESSAGE_IN 1000100001010000 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/server_fsm/MESSAGE_IN 0100100000101000 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/server_fsm/MESSAGE_IN 0000100010000000 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/server_fsm/FSM_EN 0 0
+run
+run
+run
+run
+run
+# Compile of ATM_FSM.vhd was successful.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# 6 compiles, 1 failed with no errors.
+vsim -gui work.atm_fsm
+# End time: 19:35:27 on Dec 07,2024, Elapsed time: 4:11:50
+# Errors: 0, Warnings: 3
+# vsim -gui work.atm_fsm 
+# Start time: 19:35:27 on Dec 07,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.atm_fsm(rtl)
+# Compile of ATM_FSM.vhd failed with 3 errors.
+# Compile of ATM_FSM.vhd was successful.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of Server_FSM_tb.vhd failed with 1 errors.
+# Compile of Server_FSM_tb.vhd failed with 1 errors.
+# Compile of Server_FSM_tb.vhd was successful.
+vsim -gui work.server_fsm_tb
+# End time: 19:53:55 on Dec 07,2024, Elapsed time: 0:18:28
+# Errors: 0, Warnings: 7
+# vsim -gui work.server_fsm_tb 
+# Start time: 19:53:55 on Dec 07,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.account_record(body)
+# Loading work.server_fsm_tb(behavioral)
+# Loading work.server_fsm(rtl)
+add wave -position insertpoint sim:/server_fsm_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nadzh  Hostname: LAPTOP-GKHQB72H  ProcessID: 22104
+#           Attempting to use alternate WLF file "./wlftmimwcc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmimwcc
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
