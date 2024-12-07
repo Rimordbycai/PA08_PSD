@@ -786,3 +786,289 @@ run
 run
 run
 run
+# Compile of ATM_FSM.vhd failed with 1 errors.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of ATM_FSM.vhd was successful with warnings.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of ATM_FSM.vhd was successful.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.atm_fsm
+# End time: 23:14:59 on Dec 07,2024, Elapsed time: 3:21:04
+# Errors: 0, Warnings: 6
+# vsim -gui work.atm_fsm 
+# Start time: 23:14:59 on Dec 07,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.atm_fsm(rtl)
+add wave -position insertpoint sim:/atm_fsm/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nadzh  Hostname: LAPTOP-GKHQB72H  ProcessID: 22104
+#           Attempting to use alternate WLF file "./wlftd4xb68".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd4xb68
+force -freeze sim:/atm_fsm/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/atm_fsm/FSM_EN 0 0
+force -freeze sim:/atm_fsm/INPUT_ID 00000 0
+force -freeze sim:/atm_fsm/INPUT_PIN 0000 0
+force -freeze sim:/atm_fsm/INPUT_NOMINAL 00000000 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/FSM_EN 1 0
+run
+run
+run
+force -freeze sim:/atm_fsm/INPUT_ID 000001 0
+# Value length (6) does not equal array index length (5).
+# ** UI-Msg: (vsim-4011) Invalid force value: 000001 0.
+# 
+force -freeze sim:/atm_fsm/INPUT_ID 00001 0
+run
+run
+force -freeze sim:/atm_fsm/OPTION_WS 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of ATM_FSM.vhd was successful.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.atm_fsm(rtl)
+force -freeze sim:/atm_fsm/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/atm_fsm/FSM_EN 0 0
+force -freeze sim:/atm_fsm/INPUT_ID 00001 0
+force -freeze sim:/atm_fsm/INPUT_PIN 0101 0
+force -freeze sim:/atm_fsm/INPUT_NOMINAL 00001010 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+force -freeze sim:/atm_fsm/FSM_EN 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/OPTION_WS 1 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/OPTION_WS 0 0
+run
+run
+run
+run
+run
+run
+# Compile of ATM_FSM.vhd was successful.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.atm_fsm(rtl)
+force -freeze sim:/atm_fsm/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/atm_fsm/FSM_EN 0 0
+force -freeze sim:/atm_fsm/INPUT_ID 00001 0
+force -freeze sim:/atm_fsm/INPUT_PIN 0101 0
+force -freeze sim:/atm_fsm/INPUT_NOMINAL 00001010 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+force -freeze sim:/atm_fsm/FSM_EN 1 0
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/OPTION_WS 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/MESSAGE_IN 1UUUUUUUUUUUUUUU 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/INPUT_ID 00000 0
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of ATM_FSM.vhd failed with 1 errors.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of Server_FSM_tb.vhd was successful.
+# Compile of ATM_FSM.vhd was successful.
+# Compile of Decoder3to1.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.atm_fsm(rtl)
+force -freeze sim:/atm_fsm/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/atm_fsm/FSM_EN 0 0
+force -freeze sim:/atm_fsm/INPUT_ID 00000 0
+force -freeze sim:/atm_fsm/INPUT_PIN 0101 0
+force -freeze sim:/atm_fsm/INPUT_NOMINAL 00001010 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+force -freeze sim:/atm_fsm/FSM_EN 1 0
+run
+run
+force -freeze sim:/atm_fsm/INPUT_ID 00011 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/MESSAGE_IN 0000000000000000 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/FSM_EN 0 0
+run
+run
+run
+run
+run
+force -freeze sim:/atm_fsm/FSM_EN 0 0
+force -freeze sim:/atm_fsm/FSM_EN 1 0
+run
+run
+force -freeze sim:/atm_fsm/MESSAGE_IN 1000000000001010 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/atm_fsm/*
