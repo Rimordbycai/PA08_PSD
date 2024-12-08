@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity SPI_Master is
+entity SPI_Slave is
     generic (
         SLAVE_COUNT : INTEGER := 8;
         DATA_LENGTH : INTEGER := 16
@@ -13,19 +13,18 @@ entity SPI_Master is
 
         DATA_SEND       : IN STD_LOGIC_VECTOR(DATA_LENGTH - 1 downto 0) := (others => '0');
         SEND_MESSAGE    : IN STD_LOGIC;
+        LINE_BUSY       : INOUT STD_LOGIC := '0';  -- When SDO line is used by other slaves.
         SDO             : OUT STD_LOGIC := '1';
         SENDING         : OUT STD_LOGIC := '0';
 
-        SEND_ADDRESS    : IN STD_LOGIC_VECTOR(3 downto 0);
-        SLAVE_SELECT    : OUT STD_LOGIC_VECTOR(1 to SLAVE_COUNT - 1) := (others => '1'); -- Active LOW
-
-        DATA_RECEIVE    : OUT STD_LOGIC_VECTOR(DATA_LENGTH - 1 downto 0) := (others => '0');
+        SLAVE_SELECT    : IN STD_LOGIC := '1';
         SDI : IN  STD_LOGIC := '1';
+        DATA_RECEIVE    : OUT STD_LOGIC_VECTOR(DATA_LENGTH - 1 downto 0) := (others => '0');
         RECEIVED        : OUT STD_LOGIC := '0'
     );
-end entity SPI_Master;
+end entity SPI_Slave;
 
-architecture rtl of SPI_Master is
+architecture rtl of SPI_Slave is
     type StateType is (IDLE, PULL_DOWN, PROCESSING);
 
     signal SEND_STATE : StateType := IDLE;
@@ -46,21 +45,25 @@ begin
                     end if;
                 
                 when PULL_DOWN =>
-                    SDO <= '0';
-                    SENDING <= '1';
-                    SEND_STATE <= PROCESSING;
+                    if LINE_BUSY /= '1' then 
+                        SDO <= '0';
+                        SENDING <= '1';
+                        SEND_STATE <= PROCESSING;
+                        LINE_BUSY <= '1';
+                    end if;
 
                 when PROCESSING =>
                     if SEND_COUNTER >= DATA_LENGTH then
                         SEND_COUNTER <= 0;
                         SENDING <= '0';
+                        LINE_BUSY <= '0';
                         SEND_STATE <= IDLE;
                     else
                         SDO <= DATA_SEND(SEND_COUNTER);
                         SEND_COUNTER <= SEND_COUNTER + 1;
                     end if;
             end case;
-        end if;
+        end if; 
     end process;
 
     RECEIVE: process(SCK)
@@ -68,7 +71,7 @@ begin
         if rising_edge(SCK) then
             case RECEIVE_STATE is 
                 when IDLE =>
-                    if SDI = '0' then -- SDI is pulled down
+                    if SDI = '0' and SLAVE_SELECT = '0' then -- SDI is pulled down, slave is selected.
                         RECEIVE_STATE <= PROCESSING;
                     end if;
                 
