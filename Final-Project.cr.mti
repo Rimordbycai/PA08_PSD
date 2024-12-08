@@ -1,4 +1,16 @@
-C:/Kuliah/PSD/Final-Project/Server_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_tb.vhd
+C:/Kuliah/PSD/Final-Project/ATM_Server_System.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM_Server_System.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ATM_Server_System
+-- Compiling architecture rtl of ATM_Server_System
+-- Loading package Account_Record
+-- Loading entity Server
+-- Loading entity ATM
+
+} {} {}} C:/Kuliah/PSD/Final-Project/Server_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,6 +18,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity Server_tb
 -- Compiling architecture sim of Server_tb
+
+} {} {}} C:/Kuliah/PSD/Final-Project/Server.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Account_Record
+-- Compiling entity Server
+-- Compiling architecture rtl of Server
 
 } {} {}} C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

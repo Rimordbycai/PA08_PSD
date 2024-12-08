@@ -4801,3 +4801,197 @@ run
 #    Time: 0 ps  Iteration: 0  Instance: /server_tb/UUT_Server/DATABASE
 run
 run
+add wave -position insertpoint sim:/server_tb/*
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /server_tb/UUT_Server/DATABASE
+run
+run
+add wave -position insertpoint sim:/server_tb/UUT_Server/DATABASE/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/server_tb/UUT_Server/DATABASE/Accounts(2).PIN 0101 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /server_tb/UUT_Server/DATABASE
+run
+# Compile of ATM_Server_System.vhd was successful.
+vsim -gui work.atm_server_system
+# End time: 23:51:32 on Dec 08,2024, Elapsed time: 0:50:12
+# Errors: 0, Warnings: 4
+# vsim -gui work.atm_server_system 
+# Start time: 23:51:32 on Dec 08,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.account_record(body)
+# Loading work.atm_server_system(rtl)
+# Loading work.server(rtl)
+# Loading work.server_fsm(rtl)
+# Loading work.account_database(rtl)
+# Loading work.spi_master(rtl)
+# Loading work.decoder3to7(behavioral)
+# Loading work.atm(rtl)
+# Loading work.atm_fsm(rtl)
+# Loading work.spi_slave(rtl)
+add wave -position insertpoint sim:/atm_server_system/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nadzh  Hostname: LAPTOP-GKHQB72H  ProcessID: 22104
+#           Attempting to use alternate WLF file "./wlftt7sx4k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt7sx4k
+force -freeze sim:/atm_server_system/CLK 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /atm_server_system/SERVER/DATABASE
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/atm_server_system/CLK 1 0, 0 {50 ps} -r 100
+noforce sim:/atm_server_system/RST
+force -freeze sim:/atm_server_system/RST 0 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /atm_server_system/SERVER/DATABASE
+# Compile of ATM_FSM.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# Compile of ATM_Server_tb.vhd was successful.
+# Compile of Account_Database.vhd was successful.
+# Compile of Account_Database_tb.vhd was successful.
+# Compile of SPI_Slave.vhd was successful.
+# Compile of Decoder3to7.vhd was successful.
+# Compile of SPI_tb.vhd was successful.
+# Compile of Server.vhd was successful.
+# Compile of Server_tb.vhd was successful.
+# Compile of ATM_Server_System.vhd was successful.
+# Compile of ATM_Server_System_tb.vhd was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui work.atm_server_system_tb
+# End time: 23:53:20 on Dec 08,2024, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 3
+# vsim -gui work.atm_server_system_tb 
+# Start time: 23:53:20 on Dec 08,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.atm_server_system_tb(behavior)
+# Loading work.account_record(body)
+# Loading work.atm_server_system(rtl)
+# Loading work.server(rtl)
+# Loading work.server_fsm(rtl)
+# Loading work.account_database(rtl)
+# Loading work.spi_master(rtl)
+# Loading work.decoder3to7(behavioral)
+# Loading work.atm(rtl)
+# Loading work.atm_fsm(rtl)
+# Loading work.spi_slave(rtl)
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SDO has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(4 to 7) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+add wave -position insertpoint sim:/atm_server_system_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nadzh  Hostname: LAPTOP-GKHQB72H  ProcessID: 22104
+#           Attempting to use alternate WLF file "./wlftzq5cnf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzq5cnf
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /atm_server_system_tb/DUT/SERVER/DATABASE
+run
+# ** Failure: Testbench completed
+#    Time: 380 ns  Iteration: 0  Process: /atm_server_system_tb/stimulus File: C:/Kuliah/PSD/Final-Project/ATM_Server_System_tb.vhd
+# Break in Process stimulus at C:/Kuliah/PSD/Final-Project/ATM_Server_System_tb.vhd line 87
+add wave -position insertpoint sim:/atm_server_system_tb/DUT/SERVER/*
+# Compile of ATM_FSM.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# Compile of ATM_Server_tb.vhd was successful.
+# Compile of Account_Database.vhd was successful.
+# Compile of Account_Database_tb.vhd was successful.
+# Compile of SPI_Slave.vhd was successful.
+# Compile of Decoder3to7.vhd was successful.
+# Compile of SPI_tb.vhd was successful.
+# Compile of Server.vhd was successful.
+# Compile of Server_tb.vhd was successful.
+# Compile of ATM_Server_System.vhd was successful.
+# Compile of ATM_Server_System_tb.vhd was successful.
+# 16 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.atm_server_system_tb(behavior)
+# Loading work.account_record(body)
+# Loading work.atm_server_system(rtl)
+# Loading work.server(rtl)
+# Loading work.server_fsm(rtl)
+# Loading work.account_database(rtl)
+# Loading work.spi_master(rtl)
+# Loading work.decoder3to7(behavioral)
+# Loading work.atm(rtl)
+# Loading work.atm_fsm(rtl)
+# Loading work.spi_slave(rtl)
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SDO has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(4 to 7) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /atm_server_system_tb/DUT/SERVER/DATABASE
+run
+run
+add wave -position insertpoint sim:/atm_server_system_tb/DUT/ATM1/*
+add wave -position insertpoint sim:/atm_server_system_tb/DUT/ATM2/*
+add wave -position insertpoint sim:/atm_server_system_tb/DUT/ATM3/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SDO has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /atm_server_system_tb/DUT/SLAVE_SELECT(4 to 7) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /atm_server_system_tb/DUT/SERVER/DATABASE
+run
+run
+run
