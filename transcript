@@ -1746,3 +1746,84 @@ run
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.spi_slave(rtl)
+vsim -gui work.decoder3to7
+# End time: 18:51:32 on Dec 08,2024, Elapsed time: 1:02:17
+# Errors: 0, Warnings: 1
+# vsim -gui work.decoder3to7 
+# Start time: 18:51:32 on Dec 08,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder3to7(behavioral)
+# Compile of ATM_FSM.vhd was successful.
+# Compile of SPI_Master.vhd failed with 1 errors.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# Compile of ATM_Server_tb.vhd was successful.
+# Compile of Account_Database.vhd was successful.
+# Compile of Account_Database_tb.vhd was successful.
+# Compile of SPI_Slave.vhd was successful.
+# 10 compiles, 2 failed with 1 error.
+# Compile of ATM_FSM.vhd was successful.
+# Compile of SPI_Master.vhd failed with 1 errors.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# Compile of ATM_Server_tb.vhd was successful.
+# Compile of Account_Database.vhd was successful.
+# Compile of Account_Database_tb.vhd was successful.
+# Compile of SPI_Slave.vhd was successful.
+# Compile of Decoder3to7.vhd was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of ATM_FSM.vhd was successful.
+# Compile of SPI_Master.vhd was successful.
+# Compile of Account_Record.vhd was successful.
+# Compile of ATM.vhd was successful.
+# Compile of Server_FSM.vhd was successful.
+# Compile of Server_FSM_tb.vhd was successful.
+# Compile of ATM_Server_tb.vhd was successful.
+# Compile of Account_Database.vhd was successful.
+# Compile of Account_Database_tb.vhd was successful.
+# Compile of SPI_Slave.vhd was successful.
+# Compile of Decoder3to7.vhd was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.spi_master
+# End time: 18:53:48 on Dec 08,2024, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 6
+# vsim -gui work.spi_master 
+# Start time: 18:53:48 on Dec 08,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_master(rtl)
+# Loading work.decoder3to7(behavioral)
+add wave -position insertpoint sim:/spi_master/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nadzh  Hostname: LAPTOP-GKHQB72H  ProcessID: 22104
+#           Attempting to use alternate WLF file "./wlftr744tv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr744tv
+force -freeze sim:/spi_master/SEND_ADDRESS 000 0
+run
+run
+run
+run
+run
+force -freeze sim:/spi_master/SEND_ADDRESS 001 0
+run
+run
+run
+force -freeze sim:/spi_master/SEND_ADDRESS 010 0
+run
+run
+run
+run
+force -freeze sim:/spi_master/SEND_ADDRESS 111 0
+run
+run
+run
+run

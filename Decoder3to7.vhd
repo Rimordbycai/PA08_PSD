@@ -6,7 +6,7 @@ entity Decoder3to7 is
         INPUT       : in  std_logic_vector(2 downto 0); -- 3-bit input
         OUTPUT      : out std_logic_vector(6 downto 0)  -- 7-bit output
     );
-end Decoder3to7;
+end entity Decoder3to7;
 
 architecture Behavioral of Decoder3to7 is
 begin

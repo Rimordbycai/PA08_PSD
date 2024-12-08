@@ -16,7 +16,7 @@ entity SPI_Master is
         SDO             : OUT STD_LOGIC := '1';
         SENDING         : OUT STD_LOGIC := '0';
 
-        SEND_ADDRESS    : IN STD_LOGIC_VECTOR(3 downto 0);
+        SEND_ADDRESS    : IN STD_LOGIC_VECTOR(2 downto 0);
         SLAVE_SELECT    : OUT STD_LOGIC_VECTOR(1 to SLAVE_COUNT - 1) := (others => '1'); -- Active LOW
 
         DATA_RECEIVE    : OUT STD_LOGIC_VECTOR(DATA_LENGTH - 1 downto 0) := (others => '0');
@@ -28,12 +28,27 @@ end entity SPI_Master;
 architecture rtl of SPI_Master is
     type StateType is (IDLE, PULL_DOWN, PROCESSING);
 
+    component Decoder3to7 is
+        Port (
+            INPUT       : in  std_logic_vector(2 downto 0); -- 3-bit input
+            OUTPUT      : out std_logic_vector(6 downto 0)  -- 7-bit output
+        );
+    end component Decoder3to7;
+
     signal SEND_STATE : StateType := IDLE;
     signal SEND_COUNTER : INTEGER range 0 to DATA_LENGTH := 0;
 
     signal RECEIVE_STATE : StateType := IDLE;
     signal RECEIVE_COUNTER : INTEGER range 0 to DATA_LENGTH := 0;
 begin
+
+    SLAVE_DECODER: Decoder3to7
+    port map (
+        SEND_ADDRESS,
+        SLAVE_SELECT
+    );
+    
+
     
     SEND: process(SCK)
     begin
