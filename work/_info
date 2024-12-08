@@ -15,7 +15,7 @@ Z1 DPx4 work 14 account_record 0 22 ?E_MiaEc6AE6ETS45=fTD0
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 558
+!i122 1081
 Z5 dC:/Kuliah/PSD/Final-Project
 Z6 8C:/Kuliah/PSD/Final-Project/Account_Database.vhd
 Z7 FC:/Kuliah/PSD/Final-Project/Account_Database.vhd
@@ -25,9 +25,9 @@ Vc8hC>Qi`;oK0MOm]<79eN0
 !s100 Dd^CcDD37D=PeN`2Foi7?2
 Z8 OV;C;2020.1;71
 32
-Z9 !s110 1733658811
+Z9 !s110 1733676286
 !i10b 1
-Z10 !s108 1733658811.000000
+Z10 !s108 1733676285.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Account_Database.vhd|
 Z12 !s107 C:/Kuliah/PSD/Final-Project/Account_Database.vhd|
 !i113 1
@@ -39,7 +39,7 @@ R2
 R3
 R4
 DEx4 work 16 account_database 0 22 c8hC>Qi`;oK0MOm]<79eN0
-!i122 558
+!i122 1081
 l29
 L24 30
 V]FK1AeIzd3][j?`3S2bJ50
@@ -55,12 +55,12 @@ R12
 R13
 R14
 Eaccount_database_tb
-Z15 w1733627529
+Z15 w1733667736
 R1
 R2
 R3
 R4
-!i122 559
+!i122 1082
 R5
 Z16 8C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd
 Z17 FC:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd
@@ -72,9 +72,9 @@ R8
 32
 R9
 !i10b 1
-R10
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd|
-Z19 !s107 C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd|
+Z18 !s108 1733676286.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd|
+Z20 !s107 C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd|
 !i113 1
 R13
 R14
@@ -84,7 +84,7 @@ R2
 R3
 R4
 DEx4 work 19 account_database_tb 0 22 c[IPf0Bm96UncF[a8fc<M3
-!i122 559
+!i122 1082
 l34
 L10 95
 Vg5Jf@fgC?SLaKE1P2kTSj1
@@ -93,9 +93,9 @@ R8
 32
 R9
 !i10b 1
-R10
 R18
 R19
+R20
 !i113 1
 R13
 R14
@@ -103,11 +103,11 @@ Paccount_record
 R2
 R3
 R4
-!i122 553
-Z20 w1733556428
+!i122 1076
+Z21 w1733556428
 R5
-Z21 8C:/Kuliah/PSD/Final-Project/Account_Record.vhd
-Z22 FC:/Kuliah/PSD/Final-Project/Account_Record.vhd
+Z22 8C:/Kuliah/PSD/Final-Project/Account_Record.vhd
+Z23 FC:/Kuliah/PSD/Final-Project/Account_Record.vhd
 l0
 L5 1
 V?E_MiaEc6AE6ETS45=fTD0
@@ -115,9 +115,9 @@ V?E_MiaEc6AE6ETS45=fTD0
 R8
 32
 b1
-Z23 !s110 1733658810
+Z24 !s110 1733676285
 !i10b 1
-Z24 !s108 1733658810.000000
+R10
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Account_Record.vhd|
 Z26 !s107 C:/Kuliah/PSD/Final-Project/Account_Record.vhd|
 !i113 1
@@ -128,42 +128,63 @@ R1
 R2
 R3
 R4
-!i122 553
+!i122 1076
 l0
 L18 1
 V4MEFKRe3lF8k0?ofSo_Cc2
 !s100 ]U0gJlo1C<lfaBfh=LFzO0
 R8
 32
-R23
-!i10b 1
 R24
+!i10b 1
+R10
 R25
 R26
 !i113 1
 R13
 R14
 Eatm
-w1733629659
+Z27 w1733669524
 R1
 R2
 R3
 R4
-!i122 554
+!i122 1077
 R5
-8C:/Kuliah/PSD/Final-Project/ATM.vhd
-FC:/Kuliah/PSD/Final-Project/ATM.vhd
+Z28 8C:/Kuliah/PSD/Final-Project/ATM.vhd
+Z29 FC:/Kuliah/PSD/Final-Project/ATM.vhd
 l0
 L7 1
-VmcXU;h3AiLD46`g;TLR@S2
-!s100 z;>P0fzMm_eMj2E0ZAhDm3
+VQloaZAKgXIECTiC>QW8c10
+!s100 P>H[kDRB>cPALbVNoO[m20
 R8
 32
-R23
-!i10b 1
 R24
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATM.vhd|
-!s107 C:/Kuliah/PSD/Final-Project/ATM.vhd|
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATM.vhd|
+Z31 !s107 C:/Kuliah/PSD/Final-Project/ATM.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+DEx4 work 3 atm 0 22 QloaZAKgXIECTiC>QW8c10
+!i122 1077
+l84
+L34 98
+VZO9i1n34SM<SFYMc0VRAe0
+!s100 m=9:UYBc5@@I7EIk[UPYE3
+R8
+32
+R24
+!i10b 1
+R10
+R30
+R31
 !i113 1
 R13
 R14
@@ -179,37 +200,37 @@ Vzjo3fHo1gd6C`2PY_@:oV1
 !s100 e9AAP4c7]X36GzR[WIaTU3
 R8
 32
-Z27 !s110 1733558761
+Z32 !s110 1733558761
 !i10b 1
-Z28 !s108 1733558761.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd|
-Z30 !s107 C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd|
+Z33 !s108 1733558761.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd|
+Z35 !s107 C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd|
 !i113 1
 R13
 R14
-Z31 FC:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd
+Z36 FC:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd
 w1733492528
-Z32 8C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd
+Z37 8C:/Kuliah/PSD/Final-Project/ATMEXAMPLE.vhd
 Eatm_fsm
-Z33 w1733590736
+Z38 w1733666487
 R2
 R3
 R4
-!i122 551
+!i122 1074
 R5
-Z34 8C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
-Z35 FC:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
+Z39 8C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
+Z40 FC:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
 l0
 L5 1
-V^le@F6K^^]iGKN78X3jL63
-!s100 Ai]9AF6iAn8McjBOA^czK1
+V]>c`RK>CBB4Nh8X819ZAR0
+!s100 DTF6LgSOoR1JP>L4dZ2hS0
 R8
 32
-R23
+Z41 !s110 1733676284
 !i10b 1
-R24
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd|
-Z37 !s107 C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd|
+Z42 !s108 1733676284.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd|
+Z44 !s107 C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd|
 !i113 1
 R13
 R14
@@ -217,43 +238,43 @@ Artl
 R2
 R3
 R4
-DEx4 work 7 atm_fsm 0 22 ^le@F6K^^]iGKN78X3jL63
-!i122 551
-l43
-L31 71
-VADThHE4W=B>bLUB`2X<NN3
-!s100 Dzbg@4C1Ukd10:dJzidlZ1
+DEx4 work 7 atm_fsm 0 22 ]>c`RK>CBB4Nh8X819ZAR0
+!i122 1074
+l42
+L30 71
+Vjnj5nBS>oV6Cg0W2EcJ5V0
+!s100 iaGb0IURB<>0`SkTz[MUc3
 R8
 32
-R23
+R41
 !i10b 1
-R24
-R36
-R37
+R42
+R43
+R44
 !i113 1
 R13
 R14
 Eatm_server_tb
-Z38 w1733591093
+Z45 w1733591093
 R1
 R2
 R3
 R4
-!i122 557
+!i122 1080
 R5
-Z39 8C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd
-Z40 FC:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd
+Z46 8C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd
+Z47 FC:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd
 l0
 L7 1
 VI`nW?01SD]mfKHnVF=Mnb3
 !s100 mVP9UB8:4AF1Qd6fj>]Mn3
 R8
 32
-R9
+R24
 !i10b 1
 R10
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd|
-Z42 !s107 C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd|
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd|
+Z49 !s107 C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd|
 !i113 1
 R13
 R14
@@ -263,18 +284,18 @@ R2
 R3
 R4
 DEx4 work 13 atm_server_tb 0 22 I`nW?01SD]mfKHnVF=Mnb3
-!i122 557
+!i122 1080
 l81
 L10 140
 VP7<F?C>jncZba:TVCl^RI1
 !s100 ^c^TS:a9l2661]UZ_QHSN1
 R8
 32
-R9
+R24
 !i10b 1
 R10
-R41
-R42
+R48
+R49
 !i113 1
 R13
 R14
@@ -285,8 +306,8 @@ R3
 R4
 !i122 0
 R5
-R32
-R31
+R37
+R36
 l0
 L5 1
 VT:bm>MQSM<J3F=796gGiE2
@@ -296,19 +317,19 @@ R8
 !s110 1733409005
 !i10b 1
 !s108 1733409005.000000
-R29
-R30
+R34
+R35
 !i113 1
 R13
 R14
 Edecoder3to7
-Z43 w1733658730
+Z50 w1733658730
 R3
 R4
-!i122 561
+!i122 1084
 R5
-Z44 8C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd
-Z45 FC:/Kuliah/PSD/Final-Project/Decoder3to7.vhd
+Z51 8C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd
+Z52 FC:/Kuliah/PSD/Final-Project/Decoder3to7.vhd
 l0
 L4 1
 V_RZ^e[o2R>O_XQS3a`5ge3
@@ -317,9 +338,9 @@ R8
 32
 R9
 !i10b 1
-R10
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd|
-Z47 !s107 C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd|
+R18
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd|
+Z54 !s107 C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd|
 !i113 1
 R13
 R14
@@ -327,42 +348,42 @@ Abehavioral
 R3
 R4
 DEx4 work 11 decoder3to7 0 22 _RZ^e[o2R>O_XQS3a`5ge3
-!i122 561
+!i122 1084
 l12
-Z48 L11 26
-Z49 V=2OaT1mkOE0CS=A`RFRH[1
-Z50 !s100 U`0KhBiJA`HYF3EG2J];^2
+L11 26
+V=2OaT1mkOE0CS=A`RFRH[1
+!s100 U`0KhBiJA`HYF3EG2J];^2
 R8
 32
 R9
 !i10b 1
-R10
-R46
-R47
+R18
+R53
+R54
 !i113 1
 R13
 R14
-Eserver_fsm
-Z51 w1733575592
+Eserver
+Z55 w1733676277
 R1
 R2
 R3
 R4
-!i122 555
+!i122 1086
 R5
-Z52 8C:/Kuliah/PSD/Final-Project/Server_FSM.vhd
-Z53 FC:/Kuliah/PSD/Final-Project/Server_FSM.vhd
+Z56 8C:/Kuliah/PSD/Final-Project/Server.vhd
+Z57 FC:/Kuliah/PSD/Final-Project/Server.vhd
 l0
 L7 1
-Vej]d77lXlecGFURkd^CoL2
-!s100 5P`Td@XYX^i@:1HFn8;FH1
+VLiR2moIV0W]:Fl<KHF1Mi2
+!s100 @YSbTl_ANO]Ph4ca]fod20
 R8
 32
 R9
 !i10b 1
-R24
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Server_FSM.vhd|
-Z55 !s107 C:/Kuliah/PSD/Final-Project/Server_FSM.vhd|
+R18
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Server.vhd|
+Z59 !s107 C:/Kuliah/PSD/Final-Project/Server.vhd|
 !i113 1
 R13
 R14
@@ -371,43 +392,88 @@ R1
 R2
 R3
 R4
-DEx4 work 10 server_fsm 0 22 ej]d77lXlecGFURkd^CoL2
-!i122 555
-l33
-L23 84
-VkzDMZDoKZO?ZIBOaX4PRQ1
-!s100 D;o3iS8mo>[X78IQWWY<O2
+DEx4 work 6 server 0 22 LiR2moIV0W]:Fl<KHF1Mi2
+!i122 1086
+l85
+L18 137
+Va5c6k44Qec]L1QNP^X5R:3
+!s100 :?f<R8g0eHQD;jQ[hGiC32
 R8
 32
 R9
 !i10b 1
-R24
-R54
-R55
+R18
+R58
+R59
 !i113 1
 R13
 R14
-Eserver_fsm_tb
-Z56 w1733576017
+Eserver_fsm
+Z60 w1733675842
 R1
 R2
 R3
 R4
-!i122 556
+!i122 1078
 R5
-Z57 8C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd
-Z58 FC:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd
+Z61 8C:/Kuliah/PSD/Final-Project/Server_FSM.vhd
+Z62 FC:/Kuliah/PSD/Final-Project/Server_FSM.vhd
+l0
+L7 1
+V2NVzGhK]EQb1jYZ;Y2hT01
+!s100 3dC>ai7^:lDEmKf]7c3oC3
+R8
+32
+R24
+!i10b 1
+R10
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Server_FSM.vhd|
+Z64 !s107 C:/Kuliah/PSD/Final-Project/Server_FSM.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+DEx4 work 10 server_fsm 0 22 2NVzGhK]EQb1jYZ;Y2hT01
+!i122 1078
+l36
+L26 86
+V03Kf?iTbVEDLg6R?cfLUP1
+!s100 WLTnUTkNc4L49lc8UNTlB3
+R8
+32
+R24
+!i10b 1
+R10
+R63
+R64
+!i113 1
+R13
+R14
+Eserver_fsm_tb
+Z65 w1733576017
+R1
+R2
+R3
+R4
+!i122 1079
+R5
+Z66 8C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd
+Z67 FC:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd
 l0
 L7 1
 VB:WSAXblnJ<C;3bHi]R3L3
 !s100 L^Ci[kZHZGZN_8]FBB30Y0
 R8
 32
-R9
+R24
 !i10b 1
 R10
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd|
-Z60 !s107 C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd|
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd|
+Z69 !s107 C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd|
 !i113 1
 R13
 R14
@@ -417,18 +483,61 @@ R2
 R3
 R4
 DEx4 work 13 server_fsm_tb 0 22 B:WSAXblnJ<C;3bHi]R3L3
-!i122 556
+!i122 1079
 l48
 L10 97
 Vig[IS=3@UG<@jLUzgYilC2
 !s100 aLcV;hO59YGIgZ<hRiWoR2
 R8
 32
-R9
+R24
 !i10b 1
 R10
-R59
-R60
+R68
+R69
+!i113 1
+R13
+R14
+Eserver_tb
+Z70 w1733674474
+R2
+R3
+R4
+!i122 1087
+R5
+Z71 8C:/Kuliah/PSD/Final-Project/Server_tb.vhd
+Z72 FC:/Kuliah/PSD/Final-Project/Server_tb.vhd
+l0
+L5 1
+V<neUc6o9@LoLcoHYH_a@T3
+!s100 HcRzFRCEUQNPU01E29H?=1
+R8
+32
+Z73 !s110 1733676287
+!i10b 1
+R18
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/Server_tb.vhd|
+Z75 !s107 C:/Kuliah/PSD/Final-Project/Server_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R2
+R3
+R4
+Z76 DEx4 work 9 server_tb 0 22 <neUc6o9@LoLcoHYH_a@T3
+!i122 1087
+l41
+Z77 L8 89
+Z78 VeM<iIVDn1An7@9eToDI353
+Z79 !s100 9E]QJP2W7eA4?B;:?T@WZ2
+R8
+32
+R73
+!i10b 1
+R18
+R74
+R75
 !i113 1
 R13
 R14
@@ -447,34 +556,34 @@ VzAgX9n<UHAFjOD_QUS`Z20
 !s100 >[3MS6]GVnoeVHW3i`jhB1
 R8
 32
-R27
+R32
 !i10b 1
-R28
+R33
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd|
 !s107 C:/Kuliah/PSD/Final-Project/ServerEXAMPLE.vhd|
 !i113 1
 R13
 R14
 Espi_master
-Z61 w1733658802
+Z80 w1733665480
 R2
 R3
 R4
-!i122 552
+!i122 1075
 R5
-Z62 8C:/Kuliah/PSD/Final-Project/SPI_Master.vhd
-Z63 FC:/Kuliah/PSD/Final-Project/SPI_Master.vhd
+Z81 8C:/Kuliah/PSD/Final-Project/SPI_Master.vhd
+Z82 FC:/Kuliah/PSD/Final-Project/SPI_Master.vhd
 l0
 L5 1
 VY<>;kk6fX=2GRoImK0n^23
 !s100 Xhajm^E;6:>`mW<dWPA1j1
 R8
 32
-R23
-!i10b 1
 R24
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/SPI_Master.vhd|
-Z65 !s107 C:/Kuliah/PSD/Final-Project/SPI_Master.vhd|
+!i10b 1
+R10
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/SPI_Master.vhd|
+Z84 !s107 C:/Kuliah/PSD/Final-Project/SPI_Master.vhd|
 !i113 1
 R13
 R14
@@ -483,41 +592,84 @@ R2
 R3
 R4
 DEx4 work 10 spi_master 0 22 Y<>;kk6fX=2GRoImK0n^23
-!i122 552
+!i122 1075
 l43
-L28 81
-Vj^55[1ee3JEE@g[W;h;B20
-!s100 e]Ab3]8^UjRi;?ago=m0J3
+L28 80
+VNV?OSJa9X@V=IPJ:IO8VB3
+!s100 ckRDOfL2<@P8OS<3oCl;00
 R8
 32
-R23
-!i10b 1
 R24
-R64
-R65
+!i10b 1
+R10
+R83
+R84
+!i113 1
+R13
+R14
+Espi_master_tb
+Z85 w1733659547
+R2
+R3
+R4
+!i122 587
+R5
+Z86 8C:/Kuliah/PSD/Final-Project/SPI_Master_tb.vhd
+Z87 FC:/Kuliah/PSD/Final-Project/SPI_Master_tb.vhd
+l0
+L5 1
+VUbDeB`QINM<cNIb8WHEl=1
+!s100 R96W[Nc^=GAGHl94]_VcN1
+R8
+32
+Z88 !s110 1733659551
+!i10b 1
+Z89 !s108 1733659551.000000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/SPI_Master_tb.vhd|
+Z91 !s107 C:/Kuliah/PSD/Final-Project/SPI_Master_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R2
+R3
+R4
+DEx4 work 13 spi_master_tb 0 22 UbDeB`QINM<cNIb8WHEl=1
+!i122 587
+l48
+L8 100
+VfSY@KYfQfBe]D1h3BC6SU2
+!s100 JOk<=eJiSS`97m?d4:5Y92
+R8
+32
+R88
+!i10b 1
+R89
+R90
+R91
 !i113 1
 R13
 R14
 Espi_slave
-Z66 w1733657385
+Z92 w1733667434
 R2
 R3
 R4
-!i122 560
+!i122 1083
 R5
-Z67 8C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd
-Z68 FC:/Kuliah/PSD/Final-Project/SPI_Slave.vhd
+Z93 8C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd
+Z94 FC:/Kuliah/PSD/Final-Project/SPI_Slave.vhd
 l0
 L5 1
-V<TIc84e_`zco>@=hDazH71
-!s100 eg6fd6eJ>llVX`dT0C9KQ0
+Ve8D2KbQ;1Y38KLSWFQCe80
+!s100 S1CHhh8eW2XM7FR1J1olQ1
 R8
 32
 R9
 !i10b 1
-R10
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd|
-Z70 !s107 C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd|
+R18
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd|
+Z96 !s107 C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd|
 !i113 1
 R13
 R14
@@ -525,8 +677,8 @@ Artl
 R2
 R3
 R4
-DEx4 work 9 spi_slave 0 22 <TIc84e_`zco>@=hDazH71
-!i122 560
+DEx4 work 9 spi_slave 0 22 e8D2KbQ;1Y38KLSWFQCe80
+!i122 1083
 l35
 L27 70
 V?Rl:i1nLgd5n^XO9KIjCM1
@@ -535,9 +687,52 @@ R8
 32
 R9
 !i10b 1
-R10
-R69
-R70
+R18
+R95
+R96
+!i113 1
+R13
+R14
+Espi_tb
+Z97 w1733666281
+R2
+R3
+R4
+!i122 1085
+R5
+Z98 8C:/Kuliah/PSD/Final-Project/SPI_tb.vhd
+Z99 FC:/Kuliah/PSD/Final-Project/SPI_tb.vhd
+l0
+L5 1
+Vj0DoXVnbEhXOWD^iVMP7`1
+!s100 :KfM6I;F0SLQ12clCMO?U0
+R8
+32
+R9
+!i10b 1
+R18
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Kuliah/PSD/Final-Project/SPI_tb.vhd|
+Z101 !s107 C:/Kuliah/PSD/Final-Project/SPI_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R2
+R3
+R4
+DEx4 work 6 spi_tb 0 22 j0DoXVnbEhXOWD^iVMP7`1
+!i122 1085
+l78
+L8 153
+VL>NbWOcE<FQl0e1`nIzWE3
+!s100 MWecEi^j]m_k82cffHnFY1
+R8
+32
+R9
+!i10b 1
+R18
+R100
+R101
 !i113 1
 R13
 R14

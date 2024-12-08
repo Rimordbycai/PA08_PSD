@@ -4,7 +4,6 @@ use IEEE.numeric_std.all;
 
 entity SPI_Slave is
     generic (
-        SLAVE_COUNT : INTEGER := 8;
         DATA_LENGTH : INTEGER := 16
     );   
 
@@ -13,6 +12,7 @@ entity SPI_Slave is
 
         DATA_SEND       : IN STD_LOGIC_VECTOR(DATA_LENGTH - 1 downto 0) := (others => '0');
         SEND_MESSAGE    : IN STD_LOGIC;
+
         LINE_BUSY       : INOUT STD_LOGIC := '0';  -- When SDO line is used by other slaves.
         SDO             : OUT STD_LOGIC := '1';
         SENDING         : OUT STD_LOGIC := '0';

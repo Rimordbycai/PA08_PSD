@@ -3,7 +3,6 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity ATM_FSM is
-
     generic (
         ATM_CONTROL_ID : STD_LOGIC_VECTOR(2 downto 0) := "001"
     );

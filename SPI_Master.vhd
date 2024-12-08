@@ -48,7 +48,6 @@ begin
         SLAVE_SELECT
     );
     
-
     
     SEND: process(SCK)
     begin

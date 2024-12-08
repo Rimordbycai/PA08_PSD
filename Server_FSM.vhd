@@ -8,12 +8,15 @@ entity Server_FSM is
     port (
         CLK : IN STD_LOGIC;
         FSM_EN : IN STD_LOGIC;
+        
         ACCOUNT_DATA : IN ACCOUNT;
         MESSAGE_IN : IN STD_LOGIC_VECTOR(15 downto 0);        
 
         ACCOUNT_ADDRESS_ID : OUT STD_LOGIC_VECTOR(4 downto 0);
         ACCOUNT_UPDATE : OUT ACCOUNT;
         ACCOUNT_WRITE : OUT STD_LOGIC;
+
+        ATM_ADDRESS : OUT STD_LOGIC_VECTOR(2 downto 0);
         
         MESSAGE_OUT : OUT STD_LOGIC_VECTOR(15 downto 0);
         SEND_MESSAGE : OUT STD_LOGIC := '0' 
@@ -32,16 +35,17 @@ architecture rtl of Server_FSM is
 
 begin
 
-    ACCOUNT_ADDRESS_ID <= ACCOUNT_ID; 
-
     TRANSITION : PROCESS(CLK)
         variable MONEY_TEMP : INTEGER := 0;
         variable RESPONSE_TYPE : STD_LOGIC := '0'; -- NAK 0, ACK 1
         variable ACCOUNT_ACTIVE : ACCOUNT := EmptyAccount;
     begin
+        ATM_ADDRESS <= ACCOUNT_ACTIVE.ATM;
+
         if rising_edge(CLK) and FSM_EN = '1' then
             case STATE is
                 when IDLE =>
+                    ACCOUNT_ADDRESS_ID <= ACCOUNT_ID; 
                     SEND_MESSAGE <= '0';
                     ACCOUNT_WRITE <= '0';
                     STATE <= EXECUTE;
@@ -92,6 +96,7 @@ begin
                     if RESPONSE_TYPE = '1' then -- ACK
                         MESSAGE_OUT <= '1' & ACCOUNT_ACTIVE.MONEY(14 downto 0);
                         ACCOUNT_UPDATE <= ACCOUNT_ACTIVE;
+                        ACCOUNT_ADDRESS_ID <= ACCOUNT_ACTIVE.ID; 
                         ACCOUNT_WRITE <= '1';
                     else    -- NAK
                         MESSAGE_OUT <= (others => '0');

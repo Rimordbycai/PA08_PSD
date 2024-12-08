@@ -1,4 +1,40 @@
-C:/Kuliah/PSD/Final-Project/Server_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_FSM.vhd
+C:/Kuliah/PSD/Final-Project/Server_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Server_tb
+-- Compiling architecture sim of Server_tb
+
+} {} {}} C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ATM_FSM
+-- Compiling architecture rtl of ATM_FSM
+
+} {} {}} C:/Kuliah/PSD/Final-Project/Account_Record.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Account_Record.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package Account_Record
+-- Compiling package body Account_Record
+-- Loading package Account_Record
+
+} {} {}} C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Decoder3to7.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decoder3to7
+-- Compiling architecture Behavioral of Decoder3to7
+
+} {} {}} C:/Kuliah/PSD/Final-Project/Server_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_FSM.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,16 +43,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package Account_Record
 -- Compiling entity Server_FSM
 -- Compiling architecture rtl of Server_FSM
-
-} {} {}} C:/Kuliah/PSD/Final-Project/Account_Database.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Account_Database.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Account_Record
--- Compiling entity Account_Database
--- Compiling architecture rtl of Account_Database
 
 } {} {}} C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM_Server_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -28,16 +54,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity ATM_Server_tb
 -- Compiling architecture Behavioral of ATM_Server_tb
 
-} {} {}} C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Account_Record
--- Compiling entity Server_FSM_tb
--- Compiling architecture Behavioral of Server_FSM_tb
-
 } {} {}} C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/SPI_Slave.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -46,15 +62,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity SPI_Slave
 -- Compiling architecture rtl of SPI_Slave
-
-} {} {}} C:/Kuliah/PSD/Final-Project/ATM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Account_Record
--- Compiling entity ATM
 
 } {} {}} C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Account_Database_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -66,7 +73,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Account_Database_tb
 -- Compiling architecture Behavioral of Account_Database_tb
 
-} {} {}} C:/Kuliah/PSD/Final-Project/SPI_Master.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/SPI_Master.vhd
+} {} {}} C:/Kuliah/PSD/Final-Project/SPI_Master.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/SPI_Master.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -74,26 +81,44 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity SPI_Master
 -- Compiling architecture rtl of SPI_Master
-** Error: C:/Kuliah/PSD/Final-Project/SPI_Master.vhd(36): near "Decoder3to7": (vcom-1576) expecting COMPONENT.
-** Note: C:/Kuliah/PSD/Final-Project/SPI_Master.vhd(100): VHDL Compiler exiting
 
-} {9.0 10.0} {}} C:/Kuliah/PSD/Final-Project/Account_Record.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Account_Record.vhd
+} {} {}} C:/Kuliah/PSD/Final-Project/SPI_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/SPI_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling package Account_Record
--- Compiling package body Account_Record
+-- Compiling entity SPI_tb
+-- Compiling architecture sim of SPI_tb
+
+} {} {}} C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Server_FSM_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Loading package Account_Record
+-- Compiling entity Server_FSM_tb
+-- Compiling architecture Behavioral of Server_FSM_tb
 
-} {} {}} C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM_FSM.vhd
+} {} {}} C:/Kuliah/PSD/Final-Project/Account_Database.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/Account_Database.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity ATM_FSM
--- Compiling architecture rtl of ATM_FSM
+-- Loading package Account_Record
+-- Compiling entity Account_Database
+-- Compiling architecture rtl of Account_Database
+
+} {} {}} C:/Kuliah/PSD/Final-Project/ATM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Kuliah/PSD/Final-Project/ATM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Account_Record
+-- Compiling entity ATM
+-- Compiling architecture rtl of ATM
 
 } {} {}}
