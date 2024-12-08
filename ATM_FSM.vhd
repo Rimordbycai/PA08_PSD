@@ -64,9 +64,9 @@ begin
                         ACCOUNT_PIN <= INPUT_PIN;
                     else
                         if OPTION_WS = '0' then
-                            OPCODE <= "01";
+                            OPCODE <= "01"; -- WITHDRAW
                         else
-                            OPCODE <= "10";
+                            OPCODE <= "10"; -- STORE    
                         end if;
 
                         NOMINAL <= INPUT_NOMINAL;
